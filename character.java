@@ -45,7 +45,7 @@ public class character {
         if(curr_mana>max_mana)
             curr_mana = max_mana;
     }
-
+ 
     public void up_health(int num){
         max_health += num;
     }
