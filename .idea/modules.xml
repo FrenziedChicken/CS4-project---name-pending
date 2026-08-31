@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CS4-project---name-pending.iml" filepath="$PROJECT_DIR$/CS4-project---name-pending.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entities/entities.iml" filepath="$PROJECT_DIR$/entities/entities.iml" />
     </modules>
   </component>
 </project>

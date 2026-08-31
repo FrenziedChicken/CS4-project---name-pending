@@ -1,5 +1,7 @@
-public class player extends character{
+import java.util.ArrayList;
 
+public class player extends character{
+    private ArrayList inventory;
 
     public player(int health, int mana){
         this(health, mana, 1, 0);
