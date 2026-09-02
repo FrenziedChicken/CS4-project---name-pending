@@ -26,7 +26,7 @@ public class character {
     }
 
     public void take_damage(int num, String typing){
-        curr_health -= num;
+        curr_health -= (int)num*(1.0-armor); // definetly should change to a better armor system
         if(curr_health<=0)
             status = "dead";
     }
