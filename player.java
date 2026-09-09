@@ -1,7 +1,10 @@
 import java.util.ArrayList;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
-public class player extends character{
-    private ArrayList inventory;
+
+public class player extends character{ // for things related to PC
+    private ArrayList inventory; //should we make inventory unlimited or limited or with dedicated slots for certain things
 
     public player(int health, int mana){
         this(health, mana, 1, 0);
@@ -14,5 +17,14 @@ public class player extends character{
     public player(int health, int mana, double spd, double arm, String typing){
         super(health, mana, spd, arm, typing);
     }
+    public String displayInv(){ return inventory.toString();}
+    public void useItem(){
 
+    }
+
+    public void mouseClicked(MouseEvent me) { //just a test prob in wrong spot
+        int x = me.getX();
+        int y = me.getY();
+        System.out.println("Mouse clicked at position: " + x + ", " + y);
+    }
 }
