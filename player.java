@@ -29,7 +29,8 @@ public class player extends character{ // for things related to PC
             used = inventory.remove(num);
         else
             return false;
-
+        if(used.equals("health_pot"))       //example prone to change
+            super.recov_health(50);
 
         return true;
     }
