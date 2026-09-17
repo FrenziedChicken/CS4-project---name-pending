@@ -1,16 +1,14 @@
-public class enemy extends character{
-
-    public enemy(int health, int mana){
-        this(health, mana, 1, 0);
+// Enemy.java
+public class Enemy extends Entity {
+    public Enemy(int hp) {
+        super(hp);
     }
 
-    public enemy(int health, int mana, double spd, double arm){
-        this(health, mana, spd, arm, "basic");
+    /**
+     * Very small demo AI: return a fixed damage value.
+     * Replace or extend this with stateful logic later.
+     */
+    public int decideAttack() {
+        return 3; // example fixed attack
     }
-
-    public enemy(int health, int mana, double spd, double arm, String typing){
-        super(health, mana, spd, arm, typing);
-    }
-
-
 }

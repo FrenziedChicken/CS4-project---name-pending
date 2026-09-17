@@ -6,6 +6,7 @@ public class character {
     private double speed, armor;
     private String status, type;
     private ArrayList ailments;
+    // what ever the sprites gonna be
 
     public character(int health, int mana){
         this(health, mana, 1, 0);
