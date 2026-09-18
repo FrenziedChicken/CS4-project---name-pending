@@ -56,40 +56,45 @@ public class Entity {
             status = "dead";
     }
 
-    public void use_mana(int cost){
+    public void useMp(int cost){
         mp -= cost;
         if(mp<0)
             mp = 0;
     }
-    public void recov_health(int num){
+    public void recovHp(int num){
         hp += num;
         if(hp>max_hp)
             hp = max_hp;
     }
-    public void recov_mana(int num){
+    public void recovMp(int num){
         mp += num;
         if(mp>max_mp)
             mp = max_mp;
     }
+    public void addBlock(int b) {
+        if (b < 0) throw new IllegalArgumentException("block must be >= 0");
+        block += b;
+    }
 
-    public void up_health(int num){
+    public void upHp(int num){
         max_hp += num;
     }
-    public void up_mana(int num){
+    public void upMp(int num){
         max_mp += num;
     }
-    public void up_armor(double num){
+    public void upArm(double num){
         armor += num;
     }
-    public void up_speed(double num){
+    public void upSpeed(double num){
         speed += num;
     }
 
     public String getStatus(){
         return status;
     }
-    public int getHealth() { return hp;}
-    public int getMana() { return mp;}
+    public int getHp() { return hp;}
+    public int getMp() { return mp;}
+    public int getBlock() { return block;}
 
     public boolean isDead() {
         return hp <= 0;

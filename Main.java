@@ -11,8 +11,8 @@ public class Main {
         Deck deck = new Deck(rnd);
         deck.shuffle();
 
-        Player player = new Player(30);
-        Enemy enemy = new Enemy(20);
+        Player player = new Player(30,0);
+        Enemy enemy = new Enemy(20,0);
         GameState state = new GameState(deck, player, enemy);
 
         // Initial draw to fill the hand

@@ -1,7 +1,15 @@
 // Enemy.java
 public class Enemy extends Entity {
-    public Enemy(int hp) {
-        super(hp);
+    public Enemy(int health, int mana){
+        this(health, mana, 1, 0);
+    }
+
+    public Enemy(int health, int mana, double spd, double arm){
+        this(health, mana, spd, arm, "basic");
+    }
+
+    public Enemy(int health, int mana, double spd, double arm, String typing){
+        super(health, mana, spd, arm, "basic");
     }
 
     /**
