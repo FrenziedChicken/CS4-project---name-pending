@@ -1,5 +1,10 @@
 import java.util.ArrayList;
 
+
+
+
+// marked for deletion
+
 public class character {
     //private Deck deck;
     private int max_health, curr_health, max_mana, curr_mana;
