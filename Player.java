@@ -3,6 +3,7 @@ import java.util.ArrayList;
 // Player.java
 public class Player extends Entity {
     private final Hand hand = new Hand();
+    private int coin;
 
     public Player(int health, int mana){
         this(health, mana, 1, 0);
@@ -18,5 +19,9 @@ public class Player extends Entity {
 
     public Hand getHand() {
         return hand;
+    }
+
+    public int getCoin() {
+        return coin;
     }
 }

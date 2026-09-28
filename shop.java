@@ -4,7 +4,7 @@ public class shop {
     String name;
     ArrayList list;
 
-    public shop(String nm, ){
+    public shop(String nm, Player player){
 
     }
 }
