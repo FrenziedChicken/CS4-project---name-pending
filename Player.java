@@ -21,7 +21,7 @@ public class Player extends Entity {
         return hand;
     }
 
-    public int getCoin() {
-        return coin;
-    }
+    public int getCoin() {  return coin; }
+    public void spendCoin(int num){ coin-=num;}
+    public void gainCoin(int num){  coin+=num;}
 }

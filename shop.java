@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
 public class shop {
-    String name;
-    ArrayList list;
+    private String name;
+    private ArrayList list;
+    private Player target;
 
     public shop(String nm, Player player){
 
