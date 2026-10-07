@@ -6,7 +6,7 @@ public class Entity {
     //private Deck deck;
     private int max_hp, hp, max_mp, mp;
     private double speed, armor;
-    private String status, type;
+    private String type;
     private ArrayList ailments;
     // what ever the sprites gonna be
 
@@ -23,7 +23,6 @@ public class Entity {
         max_mp = mp = mana;
         speed = spd;
         armor = arm;
-        status = "alive";
         type = typing;
         ailments = new ArrayList();
         this.block = 0;
@@ -52,8 +51,6 @@ public class Entity {
         }
         hp -= (int)remaining*(1.0-armor); //adding armor, will need to decide if or how we're doing this
         if (hp < 0) hp = 0;
-        if(hp<=0)
-            status = "dead";
     }
 
     public void useMp(int cost){
@@ -89,9 +86,6 @@ public class Entity {
         speed += num;
     }
 
-    public String getStatus(){
-        return status;
-    }
     public int getHp() { return hp;}
     public int getMp() { return mp;}
     public int getBlock() { return block;}
